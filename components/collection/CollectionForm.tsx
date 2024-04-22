@@ -4,7 +4,8 @@ const CollectionForm = () => {
   return (
     <div className="p-10">
         <p className="text-heading2-bold">Create Collection</p>
-        <Separator className="my-4"/>
+        <Separator className="my-4"/> 
+        {/* shadcn/ui */}
     </div>
   )
 }
