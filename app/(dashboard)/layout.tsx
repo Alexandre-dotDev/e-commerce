@@ -6,6 +6,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 import LeftSideBar from "@/components/layout/LeftSideBar";
 import TopBar from "@/components/layout/TopBar";
+import { ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js';
+import { ToasterProvider } from "@/lib/ToasterProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +17,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+
   return (
     <ClerkProvider>
       <html lang="pt-br">
         <body className={inter.className}>
+          <ToasterProvider/ >
           <div className="flex max-lg:flex-col text-grey-1">
             <TopBar />
             <LeftSideBar />
