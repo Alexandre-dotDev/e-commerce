@@ -1,7 +1,8 @@
 import { CldUploadWidget } from 'next-cloudinary';
-import Image from 'next/image';
-import { Button } from '../ui/button';
 import { Plus , Trash2} from 'lucide-react';
+
+import { Button } from '../ui/button';
+import Image from 'next/image';
 
 interface ImageUploadProps {
   value: string[],
@@ -35,7 +36,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, onRemove, value }) 
         ))}
       </div>
 
-      <CldUploadWidget uploadPreset="abpdlaoy" onUpload={onUpload}>
+      <CldUploadWidget uploadPreset="caixinhaApp" onUpload={onUpload}>
         {({ open }) => {
           return (
             <Button onClick={() => open()} className='bg-grey-1 text-white mt-4'>

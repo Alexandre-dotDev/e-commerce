@@ -1,8 +1,8 @@
-import { auth } from "@clerk/nextjs/server";
-import { NextRequest, NextResponse } from "next/server"
-import Collection from "@/lib/models/Collection";
 import { connectToDB } from "@/lib/mongoDB";
+import { NextRequest, NextResponse } from "next/server"
+import { auth } from "@clerk/nextjs/server";
 
+import Collection from "@/lib/models/Collection";
 
 export const POST = async (req: NextRequest) => {
     try {
