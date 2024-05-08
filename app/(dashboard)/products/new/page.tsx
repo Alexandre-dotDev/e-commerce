@@ -1,8 +1,9 @@
+import ProductForm from "@/components/products/ProductForm"
 
-const CreateProducts = () => {
+const CreateProduct = () => {
   return (
-    <div>CreateProducts</div>
+    <ProductForm />
   )
 }
 
-export default CreateProducts
+export default CreateProduct
